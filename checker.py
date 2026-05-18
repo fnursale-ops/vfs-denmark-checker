@@ -42,13 +42,11 @@ async def check_slots():
 
             found = any(word in content for word in keywords)
 
-            if found:
-                await send_message(
-                    "🇩🇰 Danimarka VFS randevusu bulundu!"
-                )
-                print("SLOT BULUNDU")
-            else:
-                print("Slot yok")
+            await send_message(
+    "✅ Telegram test mesajı başarılı. VFS sistemi çalışıyor."
+)
+
+print("TEST MESAJI GONDERILDI")
 
         except Exception as e:
             print(e)
